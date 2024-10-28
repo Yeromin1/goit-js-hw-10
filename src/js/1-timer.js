@@ -70,6 +70,9 @@ const startTimer = () => {
         message: 'The countdown has ended.',
         position: 'topRight',
       });
+
+      datetimePicker.disabled = false;
+      startButton.disabled = true;
     } else {
       updateTimerDisplay(convertMs(timeRemaining));
     }
